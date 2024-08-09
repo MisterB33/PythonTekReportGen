@@ -1,0 +1,4 @@
+I2C_5.1
+I2C_5.1DataHoldTime
+I2C_5.1DataSetupTime
+I2C_5.1StartConditionHoldTime

@@ -1,0 +1,145 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{wallpaper,graphicx} % Required for inserting images
+\usepackage[firstpage=true, placement=top, opacity=1, scale=1]{background}
+\usepackage{pdfpages}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{white}{RGB}{255,255,255}
+\begin{document}
+\begin{textblock*}{12cm}(0.25cm,0cm) % {block width} (coords) 
+   \color{white}
+   \begin{sffamily}
+    \begin{flushleft}
+        \LARGE\textbf{Moonstone Hardware Test Report Results}
+   \end{flushleft}
+   \end{sffamily}
+\end{textblock*}
+
+\begin{textblock*}{12cm}(.25cm,5.5cm)
+\begin{flushleft}
+    \begin{sffamily}
+        \large\textbf{R4028-M1015-01 \break
+        Version: 1.0 \break 
+        May 7, 2024 \break}
+    \end{sffamily}
+\end{flushleft}
+\end{textblock*}
+\vspace*{-5 cm}
+\ThisCenterWallPaper{1}{CelesticaFirstPage.pdf}
+
+\newpage
+\ThisCenterWallPaper{1}{CelesticaNextPages.pdf}
+\caption{I2C 5.1 Waveform characterestics}
+\begin{table}[h]
+\begin{tabular}{llll}
+\hline
+\multicolumn{1}{|l|}{Parameter} & \multicolumn{1}{l|}{Specification} & \multicolumn{1}{l|}{Measured Results} & \multicolumn{1}{l|}{Status} \\ \hline
+Frequency                       & \textless{}100Khz                  & 98.8140E+3Hz                                      & TESTRes                      \\
+Clock High                      & \textgreater{}$4\mu $s             & 4.9476E-6s                                      & TESTRes                      \\
+Clock Low                       & \textgreater{}$4\mu $s             & 5.1725E-6s                                      & TESTRes                      \\
+$V_{Clock max}$                 & \textless{}3.57V                   & 3.4000V                                      & TESTRes                      \\
+$V_{Clock min}$                 & \textgreater{}-.5V                 & 40.0000E-3V                                      & TESTRes                      \\
+$V_{Clock ih}$                  &  2.31-3.6V                         & 3.3600V                                      & TESTRes                      \\
+$V_{Clock il}$                  & -.5-.99V                           & 120.0000E-3V                                      & TESTRes                      \\
+$V_{Data max}$                  & \textless{}3.57V                   & 3.4000V                                      & TESTRes                      \\
+$V_{Data min}$                  & \textgreater{}-.5V                 & 40.0000E-3V                                      & TESTRes                      \\
+$V_{Data ih}$                   &  2.31-3.6V                         & 3.3200V                                      & TESTRes                      \\
+$V_{Data il}$                   & -.5-.99V                           & 80.0000E-3V                                      & TESTRes                      \\
+Clock Rise Time                 &  \textless{}1000ns                 & 201.6602E-9s                                      & TESTRes                      \\
+Clock Fall Time                 &  \textless{}300ns                  & 7.0431E-9s                                      & TESTRes                      \\
+Data Rise Time                  &  \textless{}1000ns                 & 208.6589E-9s                                      & TESTRes                      \\
+Data Fall Time                  &  \textless{}300ns                  & 7.1467E-9s                                      & TESTRes                      \\
+Data Setup Time                 &  \textgreater{}250ns               & 4.9800E-6SECONDS                                      & TESTRes                      \\
+Data Hold time                  &  \textgreater{} 0ns                & 540.0000E-9SECONDS                                      & TESTRes                      \\
+Start Condition Hold Time       &  \textgreater{} 4$\mu$s            & 540.0000E-9SECONDS                                      & TESTRes                      \\
+Stop Condition Setup Time       &   \textgreater{} 4$\mu$s           & 540.0000E-9SECONDS                                      & TESTRes                      \\  
+\end{tabular} 
+\end{table} 
+
+\newpage
+\ThisCenterWallPaper{1}{CelesticaNextPages.pdf}
+\begin{figure}\centering{\includegraphics[width= 12cm]{I2C_5.1/I2C_5.1.png}}\caption{Waveform} \end{figure}
+\begin{figure}[h]\centering{\includegraphics[width= 12cm]{I2C_5.1/I2C_5.1DataHoldTime.png}}\caption{Data Hold Time} \end{figure}
+\newpage
+\ThisCenterWallPaper{1}{CelesticaNextPages.pdf}
+\begin{figure}\centering{\includegraphics[width= 12cm]{I2C_5.1/I2C_5.1DataSetupTime.png}}\caption{Data Setup Time} \end{figure}
+\begin{figure}[h]\centering{\includegraphics[width= 12cm]{I2C_5.1/I2C_5.1StartConditionHoldTime.png}}\caption{Start Condition} \end{figure}
+
+\newpage
+\ThisCenterWallPaper{1}{CelesticaNextPages.pdf}
+\caption{I2C 5.2 Waveform characterestics}
+\begin{table}[h]
+\begin{tabular}{llll}
+\hline
+\multicolumn{1}{|l|}{Parameter} & \multicolumn{1}{l|}{Specification} & \multicolumn{1}{l|}{Measured Results} & \multicolumn{1}{l|}{Status} \\ \hline
+Frequency                       & \textless{}100Khz                  & 98.8140E+3Hz                                      & TESTRes                      \\
+Clock High                      & \textgreater{}$4\mu $s             & 4.9476E-6s                                      & TESTRes                      \\
+Clock Low                       & \textgreater{}$4\mu $s             & 5.1725E-6s                                      & TESTRes                      \\
+$V_{Clock max}$                 & \textless{}3.57V                   & 3.4000V                                      & TESTRes                      \\
+$V_{Clock min}$                 & \textgreater{}-.5V                 & 40.0000E-3V                                      & TESTRes                      \\
+$V_{Clock ih}$                  &  2.31-3.6V                         & 3.3600V                                      & TESTRes                      \\
+$V_{Clock il}$                  & -.5-.99V                           & 120.0000E-3V                                      & TESTRes                      \\
+$V_{Data max}$                  & \textless{}3.57V                   & 3.4000V                                      & TESTRes                      \\
+$V_{Data min}$                  & \textgreater{}-.5V                 & 40.0000E-3V                                      & TESTRes                      \\
+$V_{Data ih}$                   &  2.31-3.6V                         & 3.3200V                                      & TESTRes                      \\
+$V_{Data il}$                   & -.5-.99V                           & 80.0000E-3V                                      & TESTRes                      \\
+Clock Rise Time                 &  \textless{}1000ns                 & 201.6602E-9s                                      & TESTRes                      \\
+Clock Fall Time                 &  \textless{}300ns                  & 7.0431E-9s                                      & TESTRes                      \\
+Data Rise Time                  &  \textless{}1000ns                 & 208.6589E-9s                                      & TESTRes                      \\
+Data Fall Time                  &  \textless{}300ns                  & 7.1467E-9s                                      & TESTRes                      \\
+Data Setup Time                 &  \textgreater{}250ns               & 4.9800E-6SECONDS                                      & TESTRes                      \\
+Data Hold time                  &  \textgreater{} 0ns                & 540.0000E-9SECONDS                                      & TESTRes                      \\
+Start Condition Hold Time       &  \textgreater{} 4$\mu$s            & 540.0000E-9SECONDS                                      & TESTRes                      \\
+Stop Condition Setup Time       &   \textgreater{} 4$\mu$s           & 540.0000E-9SECONDS                                      & TESTRes                      \\  
+\end{tabular} 
+\end{table} 
+
+\newpage
+\ThisCenterWallPaper{1}{CelesticaNextPages.pdf}
+\begin{figure}\centering{\includegraphics[width= 12cm]{I2C_5.2/I2C_5.2.png}}\caption{Waveform} \end{figure}
+\begin{figure}[h]\centering{\includegraphics[width= 12cm]{I2C_5.2/I2C_5.2DataHoldTime.png}}\caption{Data Hold Time} \end{figure}
+\newpage
+\ThisCenterWallPaper{1}{CelesticaNextPages.pdf}
+\begin{figure}\centering{\includegraphics[width= 12cm]{I2C_5.2/I2C_5.2DataSetupTime.png}}\caption{Data Setup Time} \end{figure}
+\begin{figure}[h]\centering{\includegraphics[width= 12cm]{I2C_5.2/I2C_5.2StartConditionHoldTime.png}}\caption{Start Condition} \end{figure}
+
+\newpage
+\ThisCenterWallPaper{1}{CelesticaNextPages.pdf}
+\caption{I2C 5.3 Waveform characterestics}
+\begin{table}[h]
+\begin{tabular}{llll}
+\hline
+\multicolumn{1}{|l|}{Parameter} & \multicolumn{1}{l|}{Specification} & \multicolumn{1}{l|}{Measured Results} & \multicolumn{1}{l|}{Status} \\ \hline
+Frequency                       & \textless{}100Khz                  & 98.8140E+3Hz                                      & TESTRes                      \\
+Clock High                      & \textgreater{}$4\mu $s             & 4.9476E-6s                                      & TESTRes                      \\
+Clock Low                       & \textgreater{}$4\mu $s             & 5.1725E-6s                                      & TESTRes                      \\
+$V_{Clock max}$                 & \textless{}3.57V                   & 3.4000V                                      & TESTRes                      \\
+$V_{Clock min}$                 & \textgreater{}-.5V                 & 40.0000E-3V                                      & TESTRes                      \\
+$V_{Clock ih}$                  &  2.31-3.6V                         & 3.3600V                                      & TESTRes                      \\
+$V_{Clock il}$                  & -.5-.99V                           & 120.0000E-3V                                      & TESTRes                      \\
+$V_{Data max}$                  & \textless{}3.57V                   & 3.4000V                                      & TESTRes                      \\
+$V_{Data min}$                  & \textgreater{}-.5V                 & 40.0000E-3V                                      & TESTRes                      \\
+$V_{Data ih}$                   &  2.31-3.6V                         & 3.3200V                                      & TESTRes                      \\
+$V_{Data il}$                   & -.5-.99V                           & 80.0000E-3V                                      & TESTRes                      \\
+Clock Rise Time                 &  \textless{}1000ns                 & 201.6602E-9s                                      & TESTRes                      \\
+Clock Fall Time                 &  \textless{}300ns                  & 7.0431E-9s                                      & TESTRes                      \\
+Data Rise Time                  &  \textless{}1000ns                 & 208.6589E-9s                                      & TESTRes                      \\
+Data Fall Time                  &  \textless{}300ns                  & 7.1467E-9s                                      & TESTRes                      \\
+Data Setup Time                 &  \textgreater{}250ns               & 4.9800E-6SECONDS                                      & TESTRes                      \\
+Data Hold time                  &  \textgreater{} 0ns                & 540.0000E-9SECONDS                                      & TESTRes                      \\
+Start Condition Hold Time       &  \textgreater{} 4$\mu$s            & 540.0000E-9SECONDS                                      & TESTRes                      \\
+Stop Condition Setup Time       &   \textgreater{} 4$\mu$s           & 540.0000E-9SECONDS                                      & TESTRes                      \\  
+\end{tabular} 
+\end{table} 
+
+\newpage
+\ThisCenterWallPaper{1}{CelesticaNextPages.pdf}
+\begin{figure}\centering{\includegraphics[width= 12cm]{I2C_5.3/I2C_5.1.png}}\caption{Waveform} \end{figure}
+\begin{figure}[h]\centering{\includegraphics[width= 12cm]{I2C_5.3/I2C_5.1DataHoldTime.png}}\caption{Data Hold Time} \end{figure}
+\newpage
+\ThisCenterWallPaper{1}{CelesticaNextPages.pdf}
+\begin{figure}\centering{\includegraphics[width= 12cm]{I2C_5.3/I2C_5.1DataSetupTime.png}}\caption{Data Setup Time} \end{figure}
+\begin{figure}[h]\centering{\includegraphics[width= 12cm]{I2C_5.3/I2C_5.1StartConditionHoldTime.png}}\caption{Start Condition} \end{figure}
+
+\end{document}

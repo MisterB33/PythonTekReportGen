@@ -1,0 +1,19 @@
+Frequency                       & \textless{}100Khz                  & blah                                      & TESTRes                      \\
+Clock High                      & \textgreater{}$4\mu $s             & blah                                      & TESTRes                      \\
+Clock Low                       & \textgreater{}$4\mu $s             & blah                                      & TESTRes                      \\
+$V_{Clock max}$                 & \textless{}3.57V                   & blah                                      & TESTRes                      \\
+$V_{Clock min}$                 & \textgreater{}-.5V                 & blah                                      & TESTRes                      \\
+$V_{Clock ih}$                  &  2.31-3.6V                         & blah                                      & TESTRes                      \\
+$V_{Clock il}$                  & -.5-.99V                           & blah                                      & TESTRes                      \\
+$V_{Data max}$                  & \textless{}3.57V                   & blah                                      & TESTRes                      \\
+$V_{Data min}$                  & \textgreater{}-.5V                 & blah                                      & TESTRes                      \\
+$V_{Data ih}$                   &  2.31-3.6V                         & blah                                      & TESTRes                      \\
+$V_{Data il}$                   & -.5-.99V                           & blah                                      & TESTRes                      \\
+Clock Rise Time                 &  \textless{}1000ns                 & blah                                      & TESTRes                      \\
+Clock Fall Time                 &  \textless{}300ns                  & blah                                      & TESTRes                      \\
+Data Rise Time                  &  \textless{}1000ns                 & blah                                      & TESTRes                      \\
+Data Fall Time                  &  \textless{}300ns                  & blah                                      & TESTRes                      \\
+Data Setup Time                 &  \textgreater{}250ns               & blah                                      & TESTRes                      \\
+Data Hold time                  &  \textgreater{} 0ns                & blah                                      & TESTRes                      \\
+Start Condition Hold Time       &  \textgreater{} 4$\mu$s            & blah                                      & TESTRes                      \\
+Stop Condition Setup Time       &   \textgreater{} 4$\mu$s           & blah                                      & TESTRes                      \\  
